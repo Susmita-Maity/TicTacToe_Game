@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #548687;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+
+  footer{
+    background-color: rgb(10, 22, 48);
+    color: aliceblue;
+    margin-top: 50px;
+    text-align: center;
+    row-gap: 10px; 
+}
+footer ul{
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+
+.footer-icons a{
+    background-color: rgb(18, 37, 58);
+    color: whitesmoke;
+    margin-left: 10px; 
+    margin-top: 50px;
+    padding: 10px; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px white , -2px -2px 5px white; 
+    
+}  
+.footer-icons a:hover{
+    background-color: rgb(28, 4, 84);
+    color: white;
+    text-decoration: underline;
+} 
+footer p a{
+    color: aliceblue;
+    text-decoration: none;
+} 
+footer p a:hover{
+    color: rgb(103, 162, 244);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 70vh;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer-icons a{
+        margin-left: 0;
+        margin-top: 0;
+        padding: 5px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    footer{
+        margin-top: 20px;
+        object-fit: cover;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer-icons a{
+        margin-left: 0;
+        margin-top: 0;
+        padding: 5px;
+    }
+    
+    
+}
+
+
